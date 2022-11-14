@@ -24,6 +24,13 @@
 
 .login-signup-title {
     text-align: center;
+    color: rgb(20, 150, 20);
+    font-size: 30px;
+    background-color: rgb(145, 239, 145, .75);
+    border-radius: 10px;
+    width: 400px;
+    max-width: 400px;
+    box-shadow: 0 0 40px rgb(0, 0, 0);
 }
 /* END GLOBAL / MAIN CONTAINER */
 
@@ -50,6 +57,8 @@
 .form-title {
     text-align: center;
     margin-bottom: 2rem;
+    color: rgb(20, 150, 20);
+    font-size: 45px;
 }
 
 .input-container {
@@ -63,18 +72,20 @@
     width: 100%;
     /* Makes the buttons a good size, doesn't stretch to the end because of the padding on the form */
     padding: 0.75rem;
-   
-    /* Things I could add: */
-    /* border-radius
-    border
-    outline
-    background
-    transistion */
+    border: 2px solid rgb(20, 150, 20);
+    border-radius: 10px;
+    font-size: 18px;
 }
 
 .form-button {
     width: 100%;
-    padding: 1rem 2rem;
+    padding: 0.2rem 2rem;
+    background-color: rgb(185, 255, 185);
+    border-radius: 10px;
+    border: 2px solid rgb(20, 150, 20);
+    font-family: 'Kanit', sans-serif;
+    font-size: 25px;
+    color: rgb(20, 150, 20);
 
     /* Thing I could add: */
     /* fontweight and fontsize */
@@ -83,27 +94,26 @@
 }
 
 .form-button:hover {
-    /* background */
-}
-
-.form-button:active {
-    /* background */
+    background-color: rgb(115, 255, 115);
 }
 
 .form-text {
+/* Margin doesn't work on the link itself */
     margin-top: 1.1rem;
 }
 
 .form-link {
-
+    color: rgb(20, 150, 20);
+    font-size: 18px;
 }
 
 .form-link:hover {
-
+    color: rgb(35, 200, 35);
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 #login-error {
-
     color: red;
 }
 /* END LOGIN AND SIGNUP FORMS */
