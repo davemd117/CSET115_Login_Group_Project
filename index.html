@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSET Pet Shop | Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="login-signup-container">
+    <!-- Made this div so that I didn't have to reference the body in the CSS page, which would have effected the home page as well. -->
+        <div class="login-signup-title"><h1>THE CSET<br>PET STORE</h1></div>
+        <!-- NOTE: This h1 may not need to be inside it's own div -->
+
+        <!-- BEGIN LOGIN FORM -->
+        <div  id="login" class="form-container">
+        <!-- The login form, indicated by the "login" ID -->
+            <form class="form">
+                <h1 class="form-title">Log In</h1>
+                <div class="input-container">
+                <!-- inputs are in divs for margin purposes -->
+                    <input id="username" type="text" class="form-input" placeholder="Username" autofocus>
+                    <!-- Autofocus puts the cursor there when the page loads, the placeholder text appears before any input is entered. -->
+                </div>
+                <div class="input-container">
+                    <input id="password" type="password" class="form-input" placeholder="Password">
+                    <!-- NOTE: Input type password? -->
+                </div>
+                <button onclick="verifyUserAccount()" class="form-button" type="submit">Continue</button>
+                <!-- NOTE: Button type submit could be what's causing complications with refreshing, might not need preventDefaults() if the type is changed -->
+                <div id="login-error" class="form-hidden">Invalid Username or Password</div>
+                <!-- This only displays when there is an error. Single div with text inside keeps it simple, no need for a <p> -->
+                <p class="form-text">
+                    <a id="signup-link" class="form-link">Create new account</a>
+                    <!-- Note: <a> inside <p> for css purposes -->
+                </p>
+            </form>
+        </div>
+        <!-- END LOGIN FORM -->
+
+        <!-- BEGIN SIGNUP FORM -->
+        <!-- Mostly the same as the login form, with a few changes. InnerHTML, classes, IDs, the function button, etc -->
+        <div id="signup" class="form-container form-hidden">
+            <form action="" class="form">
+                <h1 class="form-title">Sign Up</h1>
+                <div class="input-container">
+                    <input id="new-username" type="text" class="form-input" placeholder="Username" autofocus>
+                </div>
+                <div class="input-container">
+                    <input id="new-password" type="password" class="form-input" placeholder="Password">
+                </div>
+                <button onclick="createUserAccount()" class="form-button" type="submit">Continue</button>
+                <p class="form-text">
+                    <a id="login-link" class="form-link">Already have an account?</a>
+                </p>
+            </form>
+        </div>
+        <!-- END SIGNUP FORM -->
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
