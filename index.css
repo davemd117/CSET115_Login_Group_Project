@@ -1,0 +1,109 @@
+/* START GLOBAL / MAIN CONTAINER */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login-signup-container {
+    height: 100vh;
+    /* 100% of the view height */
+    display: flex;
+    flex-direction: column;
+    /* So that the title and form stack vertically */
+    align-items: center;
+    /* Horizontally aligns the forms */
+    justify-content: center;
+    /* Vertically aligns the forms */
+    background-image: url("login_images/pet_store_background.jpeg");
+    /* NOTE DOWNLOAD THIS IMAGE */
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-family: 'Kanit', sans-serif;
+}
+
+.login-signup-title {
+    text-align: center;
+}
+/* END GLOBAL / MAIN CONTAINER */
+
+
+
+/* START LOGIN AND SIGNUP FORMS */
+.form-container {
+    margin-top: 1rem;
+    /* 1 rem unit = size of the default font, 12px font means 1rem = 12px, good for evenly spacing divs. */
+    padding: 2rem;
+    background-color: rgb(200, 200, 200, .5);
+    width: 400px;
+    max-width: 400px;
+    /* NOTE: REVIEW */
+    box-shadow: 0 0 40px;
+    /* Note: Review syntax */
+    border-radius: 15px;
+}
+
+.form-hidden {
+    display: none;
+}
+
+.form-title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.input-container {
+    margin-bottom: 1rem;
+    /* Might be the standard to put margins on divs when we can */
+}
+
+.form-input {
+    display: block;
+    /* So we can apply height and width */
+    width: 100%;
+    /* Makes the buttons a good size, doesn't stretch to the end because of the padding on the form */
+    padding: 0.75rem;
+   
+    /* Things I could add: */
+    /* border-radius
+    border
+    outline
+    background
+    transistion */
+}
+
+.form-button {
+    width: 100%;
+    padding: 1rem 2rem;
+
+    /* Thing I could add: */
+    /* fontweight and fontsize */
+    /* color */
+    /* border, border radius, outline, cursor, background color */
+}
+
+.form-button:hover {
+    /* background */
+}
+
+.form-button:active {
+    /* background */
+}
+
+.form-text {
+    margin-top: 1.1rem;
+}
+
+.form-link {
+
+}
+
+.form-link:hover {
+
+}
+
+#login-error {
+
+    color: red;
+}
+/* END LOGIN AND SIGNUP FORMS */
