@@ -6,8 +6,6 @@
 .shop-item {
     margin: 30px;
     display: block;
-    position: 
-   
 }
 
 .shop-item-title {
@@ -42,6 +40,12 @@
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
+
+
+
+
+
 
 .cart-header {
     font-weight: bold;
