@@ -6,14 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSET Pet Shop | Login</title>
     <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <!-- Google fonts -->
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <div class="login-signup-container">
-    <!-- Made this div so that I didn't have to reference the body in the CSS page, which would have effected the home page as well. -->
+    <!-- Made this div so that I didn't have to reference the body in the CSS page, which didn't matter because we used two CSS pages. -->
         <div class="login-signup-title"><h1>THE CSET<br>PET STORE</h1></div>
-        <!-- NOTE: This h1 may not need to be inside it's own div -->
-
         <!-- BEGIN LOGIN FORM -->
         <div  id="login" class="form-container">
         <!-- The login form, indicated by the "login" ID -->
@@ -26,10 +25,10 @@
                 </div>
                 <div class="input-container">
                     <input id="password" type="password" class="form-input" placeholder="Password">
-                    <!-- NOTE: Input type password? -->
+                    <!-- NOTE: Input type password -->
                 </div>
                 <button onclick="verifyUserAccount()" class="form-button" type="submit">Continue</button>
-                <!-- NOTE: Button type submit could be what's causing complications with refreshing, might not need preventDefaults() if the type is changed -->
+                <!-- Note: Button type submit could be what's causing complications with refreshing, might not need preventDefaults() if the type is changed -->
                 <div id="login-error" class="form-hidden">Invalid Username or Password</div>
                 <!-- This only displays when there is an error. Single div with text inside keeps it simple, no need for a <p> -->
                 <p class="form-text">
@@ -39,7 +38,6 @@
             </form>
         </div>
         <!-- END LOGIN FORM -->
-
         <!-- BEGIN SIGNUP FORM -->
         <!-- Mostly the same as the login form, with a few changes. InnerHTML, classes, IDs, the function button, etc -->
         <div id="signup" class="form-container form-hidden">
@@ -58,7 +56,6 @@
             </form>
         </div>
         <!-- END SIGNUP FORM -->
-
     </div>
     <script src="index.js"></script>
 </body>

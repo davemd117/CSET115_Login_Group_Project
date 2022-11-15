@@ -4,7 +4,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 .login-signup-container {
     height: 100vh;
     /* 100% of the view height */
@@ -16,12 +15,11 @@
     justify-content: center;
     /* Vertically aligns the forms */
     background-image: url("login_images/pet_store_background.jpeg");
-    /* NOTE DOWNLOAD THIS IMAGE */
     background-size: contain;
     background-repeat: no-repeat;
     font-family: 'Kanit', sans-serif;
+    /* Got this from google fonts */
 }
-
 .login-signup-title {
     text-align: center;
     color: rgb(20, 150, 20);
@@ -33,9 +31,6 @@
     box-shadow: 0 0 40px rgb(0, 0, 0);
 }
 /* END GLOBAL / MAIN CONTAINER */
-
-
-
 /* START LOGIN AND SIGNUP FORMS */
 .form-container {
     margin-top: 1rem;
@@ -49,23 +44,19 @@
     /* Note: Review syntax */
     border-radius: 15px;
 }
-
 .form-hidden {
     display: none;
 }
-
 .form-title {
     text-align: center;
     margin-bottom: 2rem;
     color: rgb(20, 150, 20);
     font-size: 45px;
 }
-
 .input-container {
     margin-bottom: 1rem;
     /* Might be the standard to put margins on divs when we can */
 }
-
 .form-input {
     display: block;
     /* So we can apply height and width */
@@ -76,7 +67,6 @@
     border-radius: 10px;
     font-size: 18px;
 }
-
 .form-button {
     width: 100%;
     padding: 0.2rem 2rem;
@@ -86,33 +76,23 @@
     font-family: 'Kanit', sans-serif;
     font-size: 25px;
     color: rgb(20, 150, 20);
-
-    /* Thing I could add: */
-    /* fontweight and fontsize */
-    /* color */
-    /* border, border radius, outline, cursor, background color */
 }
-
 .form-button:hover {
     background-color: rgb(115, 255, 115);
 }
-
 .form-text {
 /* Margin doesn't work on the link itself */
     margin-top: 1.1rem;
 }
-
 .form-link {
     color: rgb(20, 150, 20);
     font-size: 18px;
 }
-
 .form-link:hover {
     color: rgb(35, 200, 35);
     cursor: pointer;
     text-decoration: underline;
 }
-
 #login-error {
     color: red;
 }
